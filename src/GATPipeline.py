@@ -1,4 +1,3 @@
-# %%
 # Modified from https://github.com/danielegrattarola/spektral/blob/master/examples/node_prediction/citation_gat.py
 import logging
 
@@ -47,6 +46,7 @@ model.fit(
 
 # Evaluate model
 print("Evaluating model.")
-loader_te = SingleLoader(dataset, sample_weights=weights_te)
-eval_results = model.evaluate(loader_te.load(), steps=loader_te.steps_per_epoch)
+eval_results = model.evaluate(
+    loaders["test"].load(), steps=loaders["test"].steps_per_epoch
+)
 print("Done.\n" "Test loss: {}\n" "Test accuracy: {}".format(*eval_results))
