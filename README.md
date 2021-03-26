@@ -12,5 +12,5 @@ pip install -r requirements.txt
 pre-commit install # for development
 ```
 
-To run the main model: `python GATPipeline.py` (make sure you have the dataset specified in
+To run the main model: `python src/GATPipeline.py` (make sure you have the dataset specified in
 `GRAPHS_PKL`!)
