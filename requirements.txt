@@ -1,0 +1,7 @@
+black
+isort
+numpy
+pre-commit
+scipy
+spektral
+tensorflow-gpu==2.4.0

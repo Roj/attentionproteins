@@ -1,0 +1,7 @@
+env3
+*.ipynb
+.vscode
+*.swp
+*.pkl
+__pycache__
+.ipynb_checkpoints
