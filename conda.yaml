@@ -1,0 +1,14 @@
+name: attention_proteins
+dependencies:
+  - python=3.8
+  - black
+  - isort
+  - numpy
+  - pip
+  - scipy
+  - keras
+  - pip:
+    - mlflow
+    - pre-commit
+    - spektral
+    - tensorflow-gpu==2.4.0

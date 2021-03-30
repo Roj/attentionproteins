@@ -4,4 +4,5 @@ env3
 *.swp
 *.pkl
 __pycache__
+mlruns
 .ipynb_checkpoints

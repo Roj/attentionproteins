@@ -7,8 +7,11 @@ from spektral.layers import GATConv
 from spektral.transforms import AdjToSpTensor, LayerPreprocess
 from tensorflow.keras.callbacks import EarlyStopping
 
+import mlflow.keras
 from GATModel import build_model
 from ProteinDataset import ProteinDataset, mask_generator
+
+mlflow.keras.autolog()
 
 GRAPHS_PKL = "simplified_data.pkl"
 EPOCHS = 10000
