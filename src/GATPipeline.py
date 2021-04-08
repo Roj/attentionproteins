@@ -15,7 +15,7 @@ mlflow.keras.autolog()
 
 GRAPHS_PKL = "simplified_data.pkl"
 EPOCHS = 100
-PATIENCE = 100
+PATIENCE = 10
 
 # Generate train, val and test splits
 splits = dict.fromkeys(["train", "val", "test"])
