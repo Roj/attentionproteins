@@ -1,20 +1,20 @@
 # Modified from https://github.com/danielegrattarola/spektral/blob/master/examples/node_prediction/citation_gat.py
 import logging
 
+import mlflow.keras
 import numpy as np
 from spektral.data.loaders import DisjointLoader
 from spektral.layers import GATConv
 from spektral.transforms import AdjToSpTensor, LayerPreprocess
 from tensorflow.keras.callbacks import EarlyStopping
 
-import mlflow.keras
 from GATModel import build_model
 from ProteinDataset import ProteinDataset, mask_generator
 
 mlflow.keras.autolog()
 
 GRAPHS_PKL = "simplified_data.pkl"
-EPOCHS = 10000
+EPOCHS = 100
 PATIENCE = 100
 
 # Generate train, val and test splits
