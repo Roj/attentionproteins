@@ -7,4 +7,6 @@ conda_env: conda.yaml
 
 entry_points:
   main:
-    command: "python src/GATPipeline.py"
+    command: "python src/GATPipeline.py simplified_data.pkl --name topology"
+  contacts:
+    command: "python src/GATPipeline.py simplified_data_contacts.pkl --name contacts"
