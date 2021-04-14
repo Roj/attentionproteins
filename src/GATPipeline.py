@@ -82,6 +82,7 @@ if __name__ == "__main__":
 
     mlflow.log_param("epochs", args.epochs)
     mlflow.log_param("patience", args.patience)
+    mlflow.set_tag("model", "GAT")
     if args.name is not None:
         mlflow.set_tag("name", args.name)
 

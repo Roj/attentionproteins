@@ -10,3 +10,7 @@ entry_points:
     command: "python src/GATPipeline.py simplified_data.pkl --name topology"
   contacts:
     command: "python src/GATPipeline.py simplified_data_contacts.pkl --name contacts"
+  topology_logistic:
+    command "python src/LogisticPipeline.py simplified_data.pkl --name topology"
+  contacts_logistic:
+    command "python src/LogisticPipeline.py simplified_data_contacts.pkl --name contacts"
